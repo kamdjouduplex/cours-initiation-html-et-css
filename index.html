@@ -1,24 +1,106 @@
 <!DOCTYPE html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Cours d'initiation au HTML et CSS</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="block1">
-            <h1 class="title">Cours d'initiation au HTML et CSS</h1>
-            <a href="pages/about.html">A propos de nous</a> 
-            <br>
-            <br>
-            <span>un autre inline element</span> <span class="text-principal">et tjrs un autre</span>
-            <p class="text-principal story">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus deserunt aspernatur tempora repellat recusandae! Cumque hic vero animi itaque, possimus saepe facilis molestiae. Neque architecto sapiente repudiandae libero. Vero illo quibusdam atque blanditiis repellendus dolorum suscipit, et velit, deserunt ipsa iure cum voluptatem sit recusandae minus rerum est at! Consequatur, cum? Temporibus deleniti, quae adipisci mollitia facere quis excepturi, rem labore quasi debitis incidunt officia! Neque dolores rerum, totam modi porro saepe facere tempore officia quaerat, beatae atque nemo aliquam.</p>
-        </div>
-        <div id="block2">
-            <h2 class="first-h" style="color: red;">Intro au HTML</h2>
-            <p class="first-p" id="first-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut facilis odit laborum eveniet labore, quas, in illum, officia laudantium deleniti vel unde nam quibusdam suscipit eius quo officiis sit voluptas?</p>
-            <h2 class="text-principal">Intro au CSS</h2>
-            <p class="success story third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod placeat adipisci quidem dolore tempora, autem repellat sunt provident in! Nesciunt a et totam iusto, labore illo laudantium distinctio aperiam!</p>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le club des pros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Le club des pros</h1>
+    </header>
+    <section class="welcome">
+        <img src="./images/profile.png" alt="image de profile">
+        <h2>Salut les pro, <br><span>Bproo Dev</span> votre agence de création numérique</h2>
+    </section>
+    <nav>
+        <ul>
+            <li>
+                <a href="apropos.html">A propos</a>
+            </li>
+            <li>
+                <a href="apropos.html">Experiences</a>
+            </li>
+            <li>
+                <a href="apropos.html">Nos Services</a>
+            </li>
+            <li>
+                <a href="apropos.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-    </body>
+    <main class="main-content">
+        <section class="section">
+            <h2>A propos de nous</h2>
+            <p>Bproo dev est l'une des meilleurs agance de creation digital avec beaucoup d'experience les formation des developpeurs hautements qualifiers. Donc confier nous vos projet et vous ne serrez pas decu...</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience de travail</h2>
+            <ul class="images">
+                <li class="image">
+                    <img src="./images/bproo.com.png" alt="Bproo.com">
+                </li>
+                <li class="image">
+                    <img src="./images/bproo.fr.png" alt="Bproo.fr">
+                </li>
+            </ul>
+        </section>
+
+        <section class="ssection">
+            <h2>Nos Services</h2>
+            <div class="services">
+                <div class="service">
+                    <div class="service-title">
+                        <img src="./images/cloud-computing.svg" alt="cloud computing">
+                        <h3>Developement Web</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="service">
+                    <div class="service-title">
+                        <img src="./images/presentation.svg" alt="cloud computing">
+                        <h3>Formation Web</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="service">
+                    <div class="service-title">
+                        <img src="./images/seo.svg" alt="search engine optimization">
+                        <h3>SEO</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="service-title">
+                        <img src="./images/settings.svg" alt="devops">
+                        <h3>DevOps</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contactez Nous</h2>
+            <div class="form">
+                <img src="./images/office.jpg" alt="office contact">
+                <form >
+                    <div class="whatsapp">670274538</div>
+                    <input type="text" name="nom" placeholder="Nom">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" id="" rows="5"></textarea>
+                    <input type="submit" value="Envoiyer Votre Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tous droits réservés <a href="">Bproo Dev</a> &copy; 2021</p>
+    </footer>
+</body>
 </html>
